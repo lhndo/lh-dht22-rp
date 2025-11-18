@@ -5,7 +5,7 @@ edition     = "2024"
 description = "DHT22 Humidity and Temperature Sensor Driver for RP2040"
 readme      = "README.md"
 authors     = ["lhndo"]
-categories  = ["no_std", "embedded", "hardware-support"]
+categories  = ["no-std", "embedded", "hardware-support"]
 keywords    = ["dht22", "sensor"]
 
 
