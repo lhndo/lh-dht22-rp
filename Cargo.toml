@@ -1,0 +1,36 @@
+[package]
+name        = "lh-dht22-rp"
+version     = "0.0.2"
+edition     = "2024"
+description = "DHT22 Humidity and Temperature Sensor Driver for RP2040"
+readme      = "README.md"
+authors     = ["lhndo"]
+categories  = ["no_std", "embedded", "hardware-support"]
+keywords    = ["dht22", "sensor"]
+
+
+license    = "MIT"
+repository = "https://github.com/lhndo/lh-dht22-rp"
+
+
+[dependencies]
+
+rp2040-hal       = { version = "0.11.0", features = ["critical-section-impl"] }
+critical-section = "1.2.0"
+embedded-hal     = "1.0.0"
+embedded_hal_0_2 = { package = "embedded-hal", version = "0.2.7" }
+
+
+
+[lints.rust]
+dead_code        = "allow"
+unused_variables = "allow"
+
+
+[lints.clippy]
+needless_return       = "allow"
+new_without_default   = "allow"
+comparison_chain      = "allow"
+manual_range_contains = "allow"
+needless_range_loop   = "allow"
+unused_self           = "allow"
